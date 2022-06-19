@@ -17,7 +17,6 @@ const prodConfig = {
       remotes: {
         app1: `app1@${domain}/app1/latest/remoteEntry.js`,
         app2: `app2@${domain}/app2/latest/remoteEntry.js`,
-        dashboard: `dashboard@${domain}/dashboard/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
