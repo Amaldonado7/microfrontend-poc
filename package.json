@@ -1,0 +1,13 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.0",
+  "scripts": {
+    "run:app1": "npm run start --prefix='app1'",
+    "run:app2": "npm run start --prefix='app2'",
+    "run:container": "npm run start --prefix='container'",
+    "dev": "concurrently \"npm run run:app1\" \"npm run run:app2\" \"npm run run:container\""
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
